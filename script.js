@@ -109,8 +109,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "PROJEKT",
-                title: "AutoScale Fleet",
+                label: "xyz",
+                title: "xyz",
                 description:
                     "A szakdolgozati projektem teljes dokumentációjának megtekintéséhez kattints az alábbi gombra.",
                 button: "Projekt megtekintése"
@@ -271,8 +271,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "PROJECT",
-                title: "AutoScale Fleet",
+                label: "xyz",
+                title: "xyz",
                 description:
                     "Click the button below to view the complete documentation of my thesis project.",
                 button: "View Project"
@@ -433,8 +433,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "PROJEKT",
-                title: "AutoScale Fleet",
+                label: "xyz",
+                title: "xyz",
                 description:
                     "Klicken Sie auf die Schaltfläche unten, um die vollständige Dokumentation meines Abschlussprojekts anzusehen.",
                 button: "Projekt ansehen"
@@ -595,8 +595,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "PROJEKT",
-                title: "AutoScale Fleet",
+                label: "xyz",
+                title: "xyz",
                 description:
                     "Za ogled celotne dokumentacije mojega diplomskega projekta kliknite spodnji gumb.",
                 button: "Ogled projekta"
