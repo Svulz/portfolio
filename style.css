@@ -1,5 +1,6 @@
 /* =========================================================
    MODERN PORTFOLIO / DASHBOARD
+   HTML-HEZ IGAZÍTOTT VERZIÓ
 ========================================================= */
 
 :root {
@@ -33,6 +34,18 @@
     --radius: 22px;
 
     --transition: 0.25s ease;
+
+    /* ACCESSIBILITY */
+    --accessibility-font-scale: 1;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY FONT SCALE
+========================================================= */
+
+html {
+    font-size: calc(16px * var(--accessibility-font-scale));
 }
 
 
@@ -117,9 +130,30 @@ button {
     font-family: inherit;
 }
 
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 ::selection {
     background: var(--accent);
     color: white;
+}
+
+
+/* =========================================================
+   KEYBOARD FOCUS
+========================================================= */
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline-offset: 3px;
 }
 
 
@@ -184,6 +218,11 @@ button {
         0 0 15px rgba(22, 139, 208, 0.35);
 }
 
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
 .nav {
     display: flex;
     align-items: center;
@@ -198,8 +237,7 @@ button {
     font-size: 13px;
     font-weight: 600;
 
-    transition:
-        color var(--transition);
+    transition: color var(--transition);
 }
 
 .nav a::after {
@@ -227,6 +265,11 @@ button {
 .nav a:hover::after {
     width: 100%;
 }
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
 
 .header-actions {
     display: flex;
@@ -308,6 +351,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 6px;
 
     padding: 0 10px;
@@ -340,8 +384,7 @@ button {
 .language-arrow {
     font-size: 12px;
 
-    transition:
-        transform var(--transition);
+    transition: transform var(--transition);
 }
 
 .language-selector.active .language-arrow {
@@ -418,6 +461,450 @@ button {
 
 .language-menu button.active {
     font-weight: 800;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY SELECTOR
+   HTML:
+   .accessibility-selector
+   .accessibility-toggle
+   .accessibility-panel
+   .accessibility-panel-title
+   .accessibility-panel-description
+   .accessibility-option
+   .accessibility-option-icon
+   .accessibility-option-text
+   .accessibility-reset
+========================================================= */
+
+.accessibility-selector {
+    position: relative;
+}
+
+.accessibility-toggle {
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    background: var(--card);
+
+    color: var(--text);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+}
+
+.accessibility-toggle:hover {
+    transform: translateY(-2px);
+
+    color: var(--accent);
+
+    border-color: rgba(22, 139, 208, 0.4);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY PANEL
+========================================================= */
+
+.accessibility-panel {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 360px;
+
+    max-height: calc(100vh - 100px);
+
+    overflow-y: auto;
+
+    padding: 20px;
+
+    display: none;
+
+    background: var(--card-solid);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow-hover);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    z-index: 2000;
+}
+
+.accessibility-selector.active .accessibility-panel {
+    display: block;
+}
+
+
+/* PANEL HEADER */
+
+.accessibility-panel-title {
+    margin-bottom: 5px;
+
+    color: var(--text);
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.accessibility-panel-description {
+    margin-bottom: 13px;
+
+    color: var(--text-secondary);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY OPTIONS
+========================================================= */
+
+.accessibility-option {
+    width: 100%;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 12px 4px;
+
+    border: 0;
+    border-bottom: 1px solid var(--border);
+
+    background: transparent;
+
+    color: var(--text);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.accessibility-option:hover {
+    background: var(--accent-light);
+
+    color: var(--accent);
+}
+
+.accessibility-option:last-of-type {
+    border-bottom: 0;
+}
+
+
+/* OPTION ICON */
+
+.accessibility-option-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 10px;
+
+    background: var(--accent-light);
+
+    color: var(--accent);
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.accessibility-option:hover .accessibility-option-icon {
+    background: var(--accent);
+
+    color: white;
+}
+
+
+/* OPTION TEXT */
+
+.accessibility-option-text {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.accessibility-option-text strong {
+    color: var(--text);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.accessibility-option-text small {
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+.accessibility-option:hover .accessibility-option-text strong {
+    color: var(--accent);
+}
+
+
+/* ACTIVE ACCESSIBILITY OPTION */
+
+.accessibility-option[aria-pressed="true"] {
+    background: var(--accent-light);
+
+    color: var(--accent);
+}
+
+.accessibility-option[aria-pressed="true"] .accessibility-option-icon {
+    background: var(--accent);
+
+    color: white;
+}
+
+.accessibility-option[aria-pressed="true"] .accessibility-option-text strong {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY RESET
+========================================================= */
+
+.accessibility-reset {
+    width: 100%;
+
+    min-height: 42px;
+
+    margin-top: 15px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 11px;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.accessibility-reset:hover {
+    background: var(--accent-light);
+
+    color: var(--accent);
+
+    border-color: rgba(22, 139, 208, 0.3);
+
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   ACCESSIBILITY FUNCTIONAL STYLES
+========================================================= */
+
+
+/* =========================================================
+   NAGYOBB BETŰMÉRET
+========================================================= */
+
+body.accessibility-large {
+    font-size: 110%;
+}
+
+body.accessibility-large p,
+body.accessibility-large li,
+body.accessibility-large span,
+body.accessibility-large label,
+body.accessibility-large a {
+    font-size: 1.08em;
+}
+
+body.accessibility-large button {
+    font-size: 1.05em;
+}
+
+
+/* =========================================================
+   EXTRA NAGY BETŰMÉRET
+========================================================= */
+
+body.accessibility-xlarge {
+    font-size: 120%;
+}
+
+body.accessibility-xlarge p,
+body.accessibility-xlarge li,
+body.accessibility-xlarge span,
+body.accessibility-xlarge label,
+body.accessibility-xlarge a {
+    font-size: 1.15em;
+}
+
+body.accessibility-xlarge button {
+    font-size: 1.1em;
+}
+
+
+/* =========================================================
+   MAGAS KONTRASZT
+========================================================= */
+
+body.accessibility-high-contrast {
+    --background: #000000;
+    --card: #000000;
+    --card-solid: #000000;
+
+    --text: #ffffff;
+    --text-secondary: #ffffff;
+    --text-muted: #eeeeee;
+
+    --border: #ffffff;
+
+    --accent: #00ffff;
+    --accent-light: #003333;
+
+    --shadow: none;
+    --shadow-hover: 0 0 0 2px #ffffff;
+
+    background: #000000;
+    color: #ffffff;
+}
+
+body.accessibility-high-contrast a {
+    color: #00ffff;
+}
+
+body.accessibility-high-contrast button {
+    border-color: #ffffff;
+}
+
+body.accessibility-high-contrast .accessibility-panel {
+    background: #000000;
+    border-color: #ffffff;
+}
+
+
+/* =========================================================
+   OLVASHATÓ BETŰTÍPUS
+========================================================= */
+
+body.accessibility-readable-font,
+body.accessibility-readable-font * {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif !important;
+}
+
+
+/* =========================================================
+   LINKEK KIEMELÉSE
+========================================================= */
+
+body.accessibility-highlight-links a {
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+body.accessibility-highlight-links a:hover {
+    text-decoration-thickness: 3px;
+}
+
+
+/* =========================================================
+   ANIMÁCIÓK KIKAPCSOLÁSA
+========================================================= */
+
+body.accessibility-reduce-motion *,
+body.accessibility-reduce-motion *::before,
+body.accessibility-reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+}
+
+
+/* =========================================================
+   NAGYOBB KATTINTÁSI FELÜLET
+========================================================= */
+
+body.accessibility-large-targets button,
+body.accessibility-large-targets a,
+body.accessibility-large-targets input,
+body.accessibility-large-targets select {
+    min-height: 48px;
+}
+
+body.accessibility-large-targets button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* =========================================================
+   BILLENTYŰZET MÓD
+========================================================= */
+
+body.accessibility-keyboard-mode *:focus-visible {
+    outline: 4px solid #00aaff !important;
+    outline-offset: 4px !important;
+}
+
+body.accessibility-keyboard-mode a:focus-visible,
+body.accessibility-keyboard-mode button:focus-visible {
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 0 8px #00aaff !important;
 }
 
 
@@ -519,6 +1006,7 @@ button {
 
 .hero-buttons {
     display: flex;
+
     gap: 11px;
 
     flex-wrap: wrap;
@@ -540,6 +1028,7 @@ button {
 .status {
     display: inline-flex;
     align-items: center;
+
     gap: 8px;
 
     padding: 7px 12px;
@@ -575,8 +1064,7 @@ button {
 
     font-size: 12px;
 
-    transition:
-        transform var(--transition);
+    transition: transform var(--transition);
 }
 
 .status-selector.active .status-arrow {
@@ -642,7 +1130,9 @@ button {
 }
 
 
-/* STATUS MENU */
+/* =========================================================
+   STATUS MENU
+========================================================= */
 
 .status-menu {
     position: absolute;
@@ -755,6 +1245,7 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     gap: 10px;
 
     padding: 0 18px;
@@ -812,6 +1303,7 @@ button {
 
 .clock-container {
     display: flex;
+
     justify-content: flex-end;
 }
 
@@ -1067,7 +1559,7 @@ button {
 
 
 /* =========================================================
-   INFO CARD
+   QUICK INFO
 ========================================================= */
 
 .info-list {
@@ -1077,6 +1569,7 @@ button {
 .info-row {
     display: flex;
     align-items: center;
+
     gap: 13px;
 
     padding: 17px 0;
@@ -1121,7 +1614,7 @@ button {
 
 
 /* =========================================================
-   CONTACTS CARD
+   CONTACTS
 ========================================================= */
 
 .contacts-card {
@@ -1305,140 +1798,15 @@ a.contact-dashboard-item:hover
 
 
 /* =========================================================
-   PROJECTS
+   PROJECT VIEWER
 ========================================================= */
 
-.projects-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
+.projects-section {
+    border-top: 1px solid var(--border);
 }
 
-.project-card {
-    position: relative;
-
-    min-height: 340px;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 28px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    overflow: hidden;
-
-    box-shadow: var(--shadow);
-
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition);
-}
-
-.project-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 3px;
-
-    background: linear-gradient(
-        90deg,
-        var(--accent),
-        #7bd4ff
-    );
-
-    opacity: 0;
-
-    transition: opacity var(--transition);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow: var(--shadow-hover);
-}
-
-.project-card:hover::before {
-    opacity: 1;
-}
-
-.project-number {
-    color: var(--accent);
-
-    font-size: 11px;
-    font-weight: 700;
-
-    margin-bottom: 65px;
-}
-
-.project-category {
-    color: var(--accent);
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-}
-
-.project-content h3 {
-    margin: 8px 0;
-
-    font-size: 24px;
-
-    letter-spacing: -1px;
-}
-
-.project-content p {
-    max-width: 340px;
-
-    color: var(--text-secondary);
-
-    font-size: 12px;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin-top: 20px;
-}
-
-.tags span {
-    padding: 6px 9px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 7px;
-
-    background: var(--accent-light);
-
-    color: var(--text-secondary);
-
-    font-size: 9px;
-}
-
-.project-link {
-    margin-top: auto;
-
-    padding-top: 28px;
-
-    color: var(--accent);
-
-    font-size: 11px;
-    font-weight: 700;
+.project-viewer-card {
+    margin-top: 0;
 }
 
 
@@ -1452,7 +1820,7 @@ a.contact-dashboard-item:hover
 
 
 /* =========================================================
-   CV VIEWER CARD
+   CV / PROJECT VIEWER CARD
 ========================================================= */
 
 .cv-viewer-card {
@@ -1606,7 +1974,213 @@ a.contact-dashboard-item:hover
 
 
 /* =========================================================
-   RESPONSIVE
+   ACCESSIBILITY STATES
+========================================================= */
+
+/* NAGYOBB BETŰMÉRET */
+body.accessibility-large {
+    --accessibility-font-scale: 1.12;
+}
+
+/* EXTRA NAGY BETŰMÉRET */
+body.accessibility-xlarge {
+    --accessibility-font-scale: 1.25;
+}
+
+/* A két méret ne egyszerre legyen aktív */
+body.accessibility-xlarge.accessibility-large {
+    --accessibility-font-scale: 1.25;
+}
+
+
+/* MAGAS KONTRASZT */
+
+body.high-contrast {
+    --bg: #ffffff;
+    --bg-secondary: #eeeeee;
+
+    --card: #ffffff;
+    --card-solid: #ffffff;
+    --card-hover: #ffffff;
+
+    --text: #000000;
+    --text-secondary: #111111;
+    --text-muted: #333333;
+
+    --border: #000000;
+
+    --accent: #005fcc;
+    --accent-hover: #003f91;
+    --accent-light: #e4efff;
+
+    --shadow:
+        0 0 0 2px #000000;
+
+    --shadow-hover:
+        0 0 0 3px #000000;
+}
+
+body.high-contrast.dark {
+    --bg: #000000;
+    --bg-secondary: #111111;
+
+    --card: #000000;
+    --card-solid: #000000;
+    --card-hover: #111111;
+
+    --text: #ffffff;
+    --text-secondary: #ffffff;
+    --text-muted: #eeeeee;
+
+    --border: #ffffff;
+
+    --accent: #66ccff;
+    --accent-hover: #99ddff;
+    --accent-light: #172b35;
+}
+
+body.high-contrast *,
+body.high-contrast *::before,
+body.high-contrast *::after {
+    text-shadow: none !important;
+}
+
+body.high-contrast .card,
+body.high-contrast .clock-card,
+body.high-contrast .cv-viewer-card,
+body.high-contrast .accessibility-panel,
+body.high-contrast .language-menu,
+body.high-contrast .status-menu {
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+}
+
+
+/* OLVASHATÓ BETŰTÍPUS */
+
+body.readable-font {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+body.readable-font button,
+body.readable-font input,
+body.readable-font textarea,
+body.readable-font select {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* LINK KIEMELÉS */
+
+body.highlight-links a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+body.highlight-links .logo,
+body.highlight-links .btn,
+body.highlight-links .contact-dashboard-item,
+body.highlight-links .footer-links a {
+    text-decoration: underline;
+}
+
+
+/* ANIMÁCIÓK KIKAPCSOLÁSA */
+
+body.reduced-motion *,
+body.reduced-motion *::before,
+body.reduced-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    scroll-behavior: auto !important;
+
+    transition-duration: 0.01ms !important;
+}
+
+body.reduced-motion {
+    scroll-behavior: auto !important;
+}
+
+
+/* NAGYOBB KATTINTÁSI FELÜLET */
+
+body.large-targets button,
+body.large-targets a {
+    min-height: 48px;
+}
+
+body.large-targets .nav a,
+body.large-targets .footer-links a {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 4px;
+}
+
+body.large-targets .language-menu button,
+body.large-targets .status-menu button {
+    min-height: 48px;
+}
+
+body.large-targets .accessibility-option {
+    min-height: 72px;
+}
+
+
+/* BILLENTYŰZET MÓD */
+
+body.keyboard-mode :focus-visible {
+    outline: 4px solid #ff9f00 !important;
+
+    outline-offset: 5px !important;
+
+    box-shadow:
+        0 0 0 2px #ffffff,
+        0 0 0 7px #ff9f00 !important;
+}
+
+body.keyboard-mode.dark :focus-visible {
+    outline-color: #ffd166 !important;
+
+    box-shadow:
+        0 0 0 2px #000000,
+        0 0 0 7px #ffd166 !important;
+}
+
+
+/* =========================================================
+   SYSTEM REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 900PX
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -1639,12 +2213,12 @@ a.contact-dashboard-item:hover
         grid-column: span 2;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
 }
 
+
+/* =========================================================
+   RESPONSIVE — 650PX
+========================================================= */
 
 @media (max-width: 650px) {
 
@@ -1658,6 +2232,9 @@ a.contact-dashboard-item:hover
         height: 65px;
     }
 
+
+    /* MOBILE NAV */
+
     .nav {
         position: fixed;
 
@@ -1667,6 +2244,7 @@ a.contact-dashboard-item:hover
         width: 100%;
 
         display: none;
+
         flex-direction: column;
         align-items: flex-start;
 
@@ -1679,6 +2257,7 @@ a.contact-dashboard-item:hover
         border-bottom: 1px solid var(--border);
 
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 
     .dark .nav {
@@ -1692,6 +2271,9 @@ a.contact-dashboard-item:hover
     .menu-toggle {
         display: block;
     }
+
+
+    /* HERO */
 
     .hero {
         padding-top: 110px;
@@ -1707,6 +2289,9 @@ a.contact-dashboard-item:hover
         font-size: 14px;
     }
 
+
+    /* SECTIONS */
+
     .section {
         padding: 75px 0;
     }
@@ -1719,8 +2304,10 @@ a.contact-dashboard-item:hover
         gap: 12px;
     }
 
-    .dashboard-grid,
-    .projects-grid {
+
+    /* DASHBOARD */
+
+    .dashboard-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1728,6 +2315,9 @@ a.contact-dashboard-item:hover
     .exchange-card {
         grid-column: auto;
     }
+
+
+    /* CLOCK */
 
     .clock {
         font-size: 43px;
@@ -1737,36 +2327,8 @@ a.contact-dashboard-item:hover
         font-size: 52px;
     }
 
-    .project-card {
-        min-height: 310px;
-    }
 
-    .footer-inner {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 22px;
-    }
-
-    .language-toggle {
-        min-width: 55px;
-
-        height: 40px;
-
-        padding: 0 8px;
-    }
-
-    .language-menu {
-        right: -5px;
-    }
-
-    .status-menu {
-        left: 0;
-    }
-
-
-    /* MOBILE CV */
+    /* CV */
 
     .cv-viewer-card {
         flex-direction: column;
@@ -1795,6 +2357,109 @@ a.contact-dashboard-item:hover
         width: 100%;
     }
 
+
+    /* LANGUAGE */
+
+    .language-toggle {
+        min-width: 55px;
+
+        height: 40px;
+
+        padding: 0 8px;
+    }
+
+    .language-menu {
+        right: -5px;
+    }
+
+
+    /* STATUS */
+
+    .status-menu {
+        left: 0;
+    }
+
+
+    /* ACCESSIBILITY */
+
+    .accessibility-panel {
+        position: fixed;
+
+        top: 76px;
+        right: 14px;
+        left: 14px;
+
+        width: auto;
+
+        max-height: calc(100vh - 90px);
+
+        overflow-y: auto;
+
+        border-radius: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 420PX
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .header-actions {
+        gap: 5px;
+    }
+
+    .theme-toggle,
+    .menu-toggle,
+    .language-toggle,
+    .accessibility-toggle {
+        width: 36px;
+        height: 36px;
+    }
+
+    .language-toggle {
+        min-width: 48px;
+    }
+
+    .language-arrow {
+        display: none;
+    }
+
+    .accessibility-panel {
+        right: 10px;
+        left: 10px;
+
+        padding: 16px;
+    }
+
+    .accessibility-option {
+        gap: 8px;
+    }
+
+    .accessibility-option-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .accessibility-option-text strong {
+        font-size: 10px;
+    }
+
+    .accessibility-option-text small {
+        font-size: 8px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
 }
 
 
@@ -1808,8 +2473,13 @@ a.contact-dashboard-item:hover
     .hero,
     .dashboard-section,
     .footer,
-    .section-heading .btn,
-    .cv-viewer-card {
+    .accessibility-selector,
+    .language-selector,
+    .theme-toggle,
+    .menu-toggle,
+    .status-selector,
+    .cv-viewer-card,
+    .project-viewer-card {
         display: none !important;
     }
 
@@ -1823,23 +2493,6 @@ a.contact-dashboard-item:hover
         width: 100%;
 
         padding: 20px;
-    }
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-
-        transition-duration: 0.01ms !important;
     }
 
 }
