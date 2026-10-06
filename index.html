@@ -72,6 +72,7 @@
                     type="button"
                     aria-label="Nyelv kiválasztása"
                     aria-expanded="false"
+                    aria-haspopup="true"
                 >
                     <span id="currentLanguage">HU</span>
                     <span class="language-arrow">⌄</span>
@@ -113,6 +114,299 @@
                 </div>
 
             </div>
+
+
+            <div class="accessibility-selector" id="accessibilitySelector">
+
+    <button
+        class="accessibility-toggle"
+        id="accessibilityToggle"
+        type="button"
+        data-i18n-aria-label="accessibility.label"
+        aria-label="Akadálymentesítési beállítások"
+        aria-expanded="false"
+        aria-haspopup="true"
+        data-i18n-title="accessibility.title"
+        title="Akadálymentesítés"
+    >
+        ♿
+    </button>
+
+
+    <div
+        class="accessibility-panel"
+        id="accessibilityPanel"
+        data-i18n-aria-label="accessibility.label"
+        aria-label="Akadálymentesítési beállítások"
+    >
+
+        <div
+            class="accessibility-panel-title"
+            data-i18n="accessibility.heading"
+        >
+            Akadálymentesítés
+        </div>
+
+        <div
+            class="accessibility-panel-description"
+            data-i18n="accessibility.description"
+        >
+            Állítsd be az oldalt a számodra kényelmesebb megjelenítéshez.
+        </div>
+
+
+        <!-- BETŰMÉRET -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityLarge"
+            type="button"
+            data-i18n-aria-label="accessibility.large"
+            aria-label="Nagyobb betűméret"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                A
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.large">
+                    Nagyobb betűméret
+                </strong>
+
+                <small data-i18n="accessibility.largeDescription">
+                    Könnyebben olvasható szöveg
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="accessibility-option"
+            id="accessibilityXLarge"
+            type="button"
+            data-i18n-aria-label="accessibility.xlarge"
+            aria-label="Extra nagy betűméret"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                A+
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.xlarge">
+                    Extra nagy betűméret
+                </strong>
+
+                <small data-i18n="accessibility.xlargeDescription">
+                    Még nagyobb szöveg
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- KONTRASZT -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityContrast"
+            type="button"
+            data-i18n-aria-label="accessibility.contrast"
+            aria-label="Magas kontraszt"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                ◐
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.contrast">
+                    Magas kontraszt
+                </strong>
+
+                <small data-i18n="accessibility.contrastDescription">
+                    Erősebb színek és határok
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- OLVASHATÓ BETŰ -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityReadable"
+            type="button"
+            data-i18n-aria-label="accessibility.readable"
+            aria-label="Olvasható betűtípus"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                Aa
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.readable">
+                    Olvasható betűtípus
+                </strong>
+
+                <small data-i18n="accessibility.readableDescription">
+                    Egyszerűbb betűmegjelenítés
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- LINK KIEMELÉS -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityLinks"
+            type="button"
+            data-i18n-aria-label="accessibility.links"
+            aria-label="Linkek kiemelése"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                🔗
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.links">
+                    Linkek kiemelése
+                </strong>
+
+                <small data-i18n="accessibility.linksDescription">
+                    A hivatkozások aláhúzása
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- ANIMÁCIÓ -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityMotion"
+            type="button"
+            data-i18n-aria-label="accessibility.motion"
+            aria-label="Animációk kikapcsolása"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                ⏸
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.motion">
+                    Animációk kikapcsolása
+                </strong>
+
+                <small data-i18n="accessibility.motionDescription">
+                    Kevesebb mozgó elem
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- NAGYOBB KATTINTÁSI FELÜLET -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityTargets"
+            type="button"
+            data-i18n-aria-label="accessibility.targets"
+            aria-label="Nagyobb gombok"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                ☝
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.targets">
+                    Nagyobb gombok
+                </strong>
+
+                <small data-i18n="accessibility.targetsDescription">
+                    Könnyebb érintés és kattintás
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- BILLENTYŰZET -->
+
+        <button
+            class="accessibility-option"
+            id="accessibilityKeyboard"
+            type="button"
+            data-i18n-aria-label="accessibility.keyboard"
+            aria-label="Billentyűzet mód"
+            aria-pressed="false"
+        >
+
+            <span class="accessibility-option-icon">
+                ⌨
+            </span>
+
+            <span class="accessibility-option-text">
+
+                <strong data-i18n="accessibility.keyboard">
+                    Billentyűzet mód
+                </strong>
+
+                <small data-i18n="accessibility.keyboardDescription">
+                    Jobban látható fókusz
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <!-- RESET -->
+
+        <button
+            class="accessibility-reset"
+            id="accessibilityReset"
+            type="button"
+            data-i18n="accessibility.reset"
+        >
+            ↺ Beállítások visszaállítása
+        </button>
+
+    </div>
+
+</div>
 
 
             <!-- TÉMA -->
@@ -473,8 +767,6 @@
 
                 <div class="info-list">
 
-                    <!-- DÁTUM -->
-
                     <div class="info-row">
 
                         <span>📅</span>
@@ -493,8 +785,6 @@
 
                     </div>
 
-
-                    <!-- ESZKÖZ -->
 
                     <div class="info-row">
 
@@ -517,8 +807,6 @@
                     </div>
 
 
-                    <!-- SZÜLETÉSNAP -->
-
                     <div class="info-row">
 
                         <span>🎂</span>
@@ -537,8 +825,6 @@
 
                     </div>
 
-
-                    <!-- NEM -->
 
                     <div class="info-row">
 
@@ -865,8 +1151,6 @@
         </div>
 
 
-        <!-- PROJECT VIEWER -->
-
         <div class="cv-viewer-card project-viewer-card">
 
             <div class="cv-viewer-icon">
@@ -944,8 +1228,6 @@
 
         </div>
 
-
-        <!-- CV MEGTEKINTŐ -->
 
         <div class="cv-viewer-card">
 
