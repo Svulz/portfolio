@@ -80,7 +80,7 @@ const translations = {
             label: "ELÉRHETŐSÉGEK",
             email: "E-mail",
             phone: "Telefonszám",
-            facebook: "Facebook",
+            facebook: "Közösségi",
             web: "Weboldal",
             location: "Lakhely",
             locationValue: "Szolnok, Magyarország"
@@ -109,8 +109,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "xyz",
-                title: "xyz",
+                label: "Projekt",
+                title: "Teljes projekt megtekintése",
                 description:
                     "A szakdolgozati projektem teljes dokumentációjának megtekintéséhez kattints az alábbi gombra.",
                 button: "Projekt megtekintése"
@@ -242,7 +242,7 @@ const translations = {
             label: "CONTACT",
             email: "E-mail",
             phone: "Phone",
-            facebook: "Facebook",
+            facebook: "Community",
             web: "Website",
             location: "Location",
             locationValue: "Szolnok, Hungary"
@@ -271,8 +271,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "xyz",
-                title: "xyz",
+                label: "Project",
+                title: "View full project",
                 description:
                     "Click the button below to view the complete documentation of my thesis project.",
                 button: "View Project"
@@ -404,7 +404,7 @@ const translations = {
             label: "KONTAKT",
             email: "E-Mail",
             phone: "Telefonnummer",
-            facebook: "Facebook",
+            facebook: "Gemeinschaft",
             web: "Webseite",
             location: "Wohnort",
             locationValue: "Szolnok, Ungarn"
@@ -433,8 +433,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "xyz",
-                title: "xyz",
+                label: "Projekt",
+                title: "Vollständiges Projekt ansehen",
                 description:
                     "Klicken Sie auf die Schaltfläche unten, um die vollständige Dokumentation meines Abschlussprojekts anzusehen.",
                 button: "Projekt ansehen"
@@ -566,7 +566,7 @@ const translations = {
             label: "KONTAKT",
             email: "E-pošta",
             phone: "Telefonska številka",
-            facebook: "Facebook",
+            facebook: "Skupnost",
             web: "Spletna stran",
             location: "Prebivališče",
             locationValue: "Szolnok, Madžarska"
@@ -595,8 +595,8 @@ const translations = {
         project: {
 
             viewer: {
-                label: "xyz",
-                title: "xyz",
+                label: "Projekta",
+                title: "Ogled celotnega projekta",
                 description:
                     "Za ogled celotne dokumentacije mojega diplomskega projekta kliknite spodnji gumb.",
                 button: "Ogled projekta"
