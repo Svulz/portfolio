@@ -53,6 +53,38 @@ const translations = {
             title: "Aktuális információk"
         },
 
+        accessibility: {
+            title: "Akadálymentesítés",
+            description:
+                "Állítsd be az oldalt a számodra kényelmesebb megjelenítéshez.",
+
+            large: "Nagyobb betűméret",
+            largeDescription: "Könnyebben olvasható szöveg",
+
+            xlarge: "Extra nagy betűméret",
+            xlargeDescription: "Még nagyobb szöveg",
+
+            contrast: "Magas kontraszt",
+            contrastDescription: "Erősebb színek és határok",
+
+            readable: "Olvasható betűtípus",
+            readableDescription: "Egyszerűbb betűmegjelenítés",
+
+            links: "Linkek kiemelése",
+            linksDescription: "A hivatkozások aláhúzása",
+
+            motion: "Animációk kikapcsolása",
+            motionDescription: "Kevesebb mozgó elem",
+
+            targets: "Nagyobb gombok",
+            targetsDescription: "Könnyebb érintés és kattintás",
+
+            keyboard: "Billentyűzet mód",
+            keyboardDescription: "Jobban látható fókusz",
+
+            reset: "Beállítások visszaállítása"
+        },
+
         weather: {
             label: "IDŐJÁRÁS",
             wind: "💨 Szél",
@@ -107,7 +139,6 @@ const translations = {
         },
 
         project: {
-
             viewer: {
                 label: "Projekt",
                 title: "Teljes projekt megtekintése",
@@ -115,11 +146,9 @@ const translations = {
                     "A szakdolgozati projektem teljes dokumentációjának megtekintéséhez kattints az alábbi gombra.",
                 button: "Projekt megtekintése"
             }
-
         },
 
         cv: {
-
             eyebrow: "RÓLAM",
             title: "Curriculum Vitae",
 
@@ -136,7 +165,7 @@ const translations = {
             viewDescription:
                 "A teljes önéletrajz megtekintéséhez kattints az alábbi gombra.",
 
-            viewButton: "Teljes CV megtekintése →",
+            viewButton: "Teljes CV megtekintése →"
         },
 
         footer: {
@@ -144,7 +173,6 @@ const translations = {
         },
 
         weatherCodes: {
-
             0: "Derült égbolt",
             1: "Túlnyomóan derült",
             2: "Részben felhős",
@@ -166,9 +194,7 @@ const translations = {
             95: "Zivatar",
             96: "Zivatar jégesővel",
             99: "Erős zivatar"
-
         }
-
     },
 
 
@@ -213,6 +239,38 @@ const translations = {
         dashboard: {
             eyebrow: "DASHBOARD",
             title: "Current information"
+        },
+
+        accessibility: {
+            title: "Accessibility",
+            description:
+                "Customize the website for a more comfortable experience.",
+
+            large: "Larger text",
+            largeDescription: "Easier-to-read text",
+
+            xlarge: "Extra large text",
+            xlargeDescription: "Even larger text",
+
+            contrast: "High contrast",
+            contrastDescription: "Stronger colors and borders",
+
+            readable: "Readable font",
+            readableDescription: "Simpler font appearance",
+
+            links: "Highlight links",
+            linksDescription: "Underline hyperlinks",
+
+            motion: "Reduce animations",
+            motionDescription: "Less moving content",
+
+            targets: "Larger buttons",
+            targetsDescription: "Easier tapping and clicking",
+
+            keyboard: "Keyboard mode",
+            keyboardDescription: "More visible focus",
+
+            reset: "Reset settings"
         },
 
         weather: {
@@ -269,7 +327,6 @@ const translations = {
         },
 
         project: {
-
             viewer: {
                 label: "Project",
                 title: "View full project",
@@ -277,11 +334,9 @@ const translations = {
                     "Click the button below to view the complete documentation of my thesis project.",
                 button: "View Project"
             }
-
         },
 
         cv: {
-
             eyebrow: "ABOUT ME",
             title: "Curriculum Vitae",
 
@@ -298,7 +353,7 @@ const translations = {
             viewDescription:
                 "Click the button below to view my complete CV.",
 
-            viewButton: "View Full CV →",
+            viewButton: "View Full CV →"
         },
 
         footer: {
@@ -306,7 +361,6 @@ const translations = {
         },
 
         weatherCodes: {
-
             0: "Clear sky",
             1: "Mainly clear",
             2: "Partly cloudy",
@@ -328,9 +382,7 @@ const translations = {
             95: "Thunderstorm",
             96: "Thunderstorm with hail",
             99: "Heavy thunderstorm"
-
         }
-
     },
 
 
@@ -375,6 +427,38 @@ const translations = {
         dashboard: {
             eyebrow: "DASHBOARD",
             title: "Aktuelle Informationen"
+        },
+
+        accessibility: {
+            title: "Barrierefreiheit",
+            description:
+                "Passe die Website für eine angenehmere Nutzung an.",
+
+            large: "Größere Schrift",
+            largeDescription: "Leichter lesbarer Text",
+
+            xlarge: "Extra große Schrift",
+            xlargeDescription: "Noch größerer Text",
+
+            contrast: "Hoher Kontrast",
+            contrastDescription: "Stärkere Farben und Abgrenzungen",
+
+            readable: "Lesbare Schriftart",
+            readableDescription: "Einfachere Schriftgestaltung",
+
+            links: "Links hervorheben",
+            linksDescription: "Links unterstreichen",
+
+            motion: "Animationen deaktivieren",
+            motionDescription: "Weniger bewegte Elemente",
+
+            targets: "Größere Schaltflächen",
+            targetsDescription: "Einfacheres Tippen und Klicken",
+
+            keyboard: "Tastaturmodus",
+            keyboardDescription: "Deutlich sichtbarer Fokus",
+
+            reset: "Einstellungen zurücksetzen"
         },
 
         weather: {
@@ -431,7 +515,6 @@ const translations = {
         },
 
         project: {
-
             viewer: {
                 label: "Projekt",
                 title: "Vollständiges Projekt ansehen",
@@ -439,11 +522,9 @@ const translations = {
                     "Klicken Sie auf die Schaltfläche unten, um die vollständige Dokumentation meines Abschlussprojekts anzusehen.",
                 button: "Projekt ansehen"
             }
-
         },
 
         cv: {
-
             eyebrow: "ÜBER MICH",
             title: "Lebenslauf",
 
@@ -460,7 +541,7 @@ const translations = {
             viewDescription:
                 "Klicken Sie auf die Schaltfläche unten, um meinen vollständigen Lebenslauf anzusehen.",
 
-            viewButton: "Vollständigen Lebenslauf ansehen →",
+            viewButton: "Vollständigen Lebenslauf ansehen →"
         },
 
         footer: {
@@ -468,7 +549,6 @@ const translations = {
         },
 
         weatherCodes: {
-
             0: "Klarer Himmel",
             1: "Überwiegend klar",
             2: "Teilweise bewölkt",
@@ -490,9 +570,7 @@ const translations = {
             95: "Gewitter",
             96: "Gewitter mit Hagel",
             99: "Starkes Gewitter"
-
         }
-
     },
 
 
@@ -537,6 +615,38 @@ const translations = {
         dashboard: {
             eyebrow: "NADZORNA PLOŠČA",
             title: "Aktualne informacije"
+        },
+
+        accessibility: {
+            title: "Dostopnost",
+            description:
+                "Prilagodite spletno stran za udobnejšo uporabo.",
+
+            large: "Večja velikost pisave",
+            largeDescription: "Lažje berljivo besedilo",
+
+            xlarge: "Zelo velika pisava",
+            xlargeDescription: "Še večje besedilo",
+
+            contrast: "Visok kontrast",
+            contrastDescription: "Močnejše barve in obrobe",
+
+            readable: "Berljiva pisava",
+            readableDescription: "Preprostejši prikaz pisave",
+
+            links: "Označi povezave",
+            linksDescription: "Podčrtane povezave",
+
+            motion: "Izklopi animacije",
+            motionDescription: "Manj premikajočih se elementov",
+
+            targets: "Večji gumbi",
+            targetsDescription: "Lažje dotikanje in klikanje",
+
+            keyboard: "Način tipkovnice",
+            keyboardDescription: "Bolj vidno označen fokus",
+
+            reset: "Ponastavi nastavitve"
         },
 
         weather: {
@@ -593,7 +703,6 @@ const translations = {
         },
 
         project: {
-
             viewer: {
                 label: "Projekta",
                 title: "Ogled celotnega projekta",
@@ -601,11 +710,9 @@ const translations = {
                     "Za ogled celotne dokumentacije mojega diplomskega projekta kliknite spodnji gumb.",
                 button: "Ogled projekta"
             }
-
         },
 
         cv: {
-
             eyebrow: "O MENI",
             title: "Življenjepis",
 
@@ -622,7 +729,7 @@ const translations = {
             viewDescription:
                 "Za ogled celotnega življenjepisa kliknite spodnji gumb.",
 
-            viewButton: "Ogled celotnega življenjepisa →",
+            viewButton: "Ogled celotnega življenjepisa →"
         },
 
         footer: {
@@ -630,7 +737,6 @@ const translations = {
         },
 
         weatherCodes: {
-
             0: "Jasno nebo",
             1: "Pretežno jasno",
             2: "Delno oblačno",
@@ -652,9 +758,7 @@ const translations = {
             95: "Nevihta",
             96: "Nevihta s točo",
             99: "Močna nevihta"
-
         }
-
     }
 
 };
@@ -768,6 +872,17 @@ function setLanguage(language) {
    LANGUAGE BUTTON
 ========================================================= */
 
+const languageToggle =
+    document.getElementById(
+        "languageToggle"
+    );
+
+const languageSelector =
+    document.querySelector(
+        ".language-selector"
+    );
+
+
 function updateLanguageButton() {
 
     const currentLanguageElement =
@@ -781,7 +896,6 @@ function updateLanguageButton() {
             currentLanguage.toUpperCase();
 
     }
-
 
     document
         .querySelectorAll(
@@ -798,17 +912,6 @@ function updateLanguageButton() {
         });
 
 }
-
-
-const languageToggle =
-    document.getElementById(
-        "languageToggle"
-    );
-
-const languageSelector =
-    document.querySelector(
-        ".language-selector"
-    );
 
 
 if (
@@ -847,7 +950,9 @@ document
 
         button.addEventListener(
             "click",
-            () => {
+            event => {
+
+                event.stopPropagation();
 
                 setLanguage(
                     button.dataset.language
@@ -907,9 +1012,11 @@ const statusDot =
 
 
 const statusTranslations = {
+
     online: "status.online",
     offline: "status.offline",
     invisible: "status.invisible"
+
 };
 
 
@@ -921,19 +1028,20 @@ let currentStatus =
 
 function updateStatusUI() {
 
-    if (!statusToggle || !statusText || !statusDot) {
+    if (
+        !statusToggle ||
+        !statusText ||
+        !statusDot
+    ) {
         return;
     }
-
 
     const statusKey =
         statusTranslations[currentStatus] ||
         statusTranslations.online;
 
-
     statusText.textContent =
         getTranslation(statusKey);
-
 
     statusToggle.classList.remove(
         "status-online",
@@ -941,11 +1049,9 @@ function updateStatusUI() {
         "status-invisible"
     );
 
-
     statusToggle.classList.add(
         `status-${currentStatus}`
     );
-
 
     statusDot.classList.remove(
         "status-online",
@@ -953,11 +1059,9 @@ function updateStatusUI() {
         "status-invisible"
     );
 
-
     statusDot.classList.add(
         `status-${currentStatus}`
     );
-
 
     document
         .querySelectorAll(
@@ -987,7 +1091,6 @@ function setStatus(status) {
     ) {
         return;
     }
-
 
     currentStatus =
         status;
@@ -1038,7 +1141,9 @@ document
 
         button.addEventListener(
             "click",
-            () => {
+            event => {
+
+                event.stopPropagation();
 
                 setStatus(
                     button.dataset.status
@@ -1065,6 +1170,702 @@ document
         );
 
     });
+
+
+/* =========================================================
+   ACCESSIBILITY SYSTEM
+========================================================= */
+
+const accessibilitySelector =
+    document.getElementById(
+        "accessibilitySelector"
+    );
+
+const accessibilityToggle =
+    document.getElementById(
+        "accessibilityToggle"
+    );
+
+const accessibilityPanel =
+    document.getElementById(
+        "accessibilityPanel"
+    );
+
+const accessibilityLarge =
+    document.getElementById(
+        "accessibilityLarge"
+    );
+
+const accessibilityXLarge =
+    document.getElementById(
+        "accessibilityXLarge"
+    );
+
+const accessibilityContrast =
+    document.getElementById(
+        "accessibilityContrast"
+    );
+
+const accessibilityReadable =
+    document.getElementById(
+        "accessibilityReadable"
+    );
+
+const accessibilityLinks =
+    document.getElementById(
+        "accessibilityLinks"
+    );
+
+const accessibilityMotion =
+    document.getElementById(
+        "accessibilityMotion"
+    );
+
+const accessibilityTargets =
+    document.getElementById(
+        "accessibilityTargets"
+    );
+
+const accessibilityKeyboard =
+    document.getElementById(
+        "accessibilityKeyboard"
+    );
+
+const accessibilityReset =
+    document.getElementById(
+        "accessibilityReset"
+    );
+
+
+/*
+    Az Accessibility beállítások külön
+    localStorage objektumban kerülnek mentésre.
+*/
+
+const defaultAccessibilitySettings = {
+
+    fontSize: "normal",
+
+    contrast: false,
+
+    readable: false,
+
+    links: false,
+
+    motion: false,
+
+    targets: false,
+
+    keyboard: false
+
+};
+
+
+let accessibilitySettings = {
+
+    ...defaultAccessibilitySettings
+
+};
+
+
+function loadAccessibilitySettings() {
+
+    try {
+
+        const saved =
+            localStorage.getItem(
+                "accessibilitySettings"
+            );
+
+        if (!saved) {
+            return;
+        }
+
+        const parsed =
+            JSON.parse(saved);
+
+        accessibilitySettings = {
+
+            ...defaultAccessibilitySettings,
+
+            ...parsed
+
+        };
+
+        if (
+            ![
+                "normal",
+                "large",
+                "xlarge"
+            ].includes(
+                accessibilitySettings.fontSize
+            )
+        ) {
+
+            accessibilitySettings.fontSize =
+                "normal";
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "Accessibility settings could not be loaded:",
+            error
+        );
+
+        accessibilitySettings = {
+            ...defaultAccessibilitySettings
+        };
+
+    }
+
+}
+
+
+function saveAccessibilitySettings() {
+
+    localStorage.setItem(
+        "accessibilitySettings",
+        JSON.stringify(
+            accessibilitySettings
+        )
+    );
+
+}
+
+
+function applyAccessibilitySettings() {
+
+    const body =
+        document.body;
+
+    if (!body) {
+        return;
+    }
+
+
+    /*
+        Betűméret
+    */
+
+    body.classList.remove(
+        "accessibility-large",
+        "accessibility-xlarge"
+    );
+
+
+    if (
+        accessibilitySettings.fontSize ===
+        "large"
+    ) {
+
+        body.classList.add(
+            "accessibility-large"
+        );
+
+    }
+
+
+    if (
+        accessibilitySettings.fontSize ===
+        "xlarge"
+    ) {
+
+        body.classList.add(
+            "accessibility-xlarge"
+        );
+
+    }
+
+
+    /*
+        Magas kontraszt
+    */
+
+    body.classList.toggle(
+        "accessibility-high-contrast",
+        accessibilitySettings.contrast
+    );
+
+
+    /*
+        Olvasható betűtípus
+    */
+
+    body.classList.toggle(
+        "accessibility-readable-font",
+        accessibilitySettings.readable
+    );
+
+
+    /*
+        Linkek kiemelése
+    */
+
+    body.classList.toggle(
+        "accessibility-highlight-links",
+        accessibilitySettings.links
+    );
+
+
+    /*
+        Animációk kikapcsolása
+    */
+
+    body.classList.toggle(
+        "accessibility-reduce-motion",
+        accessibilitySettings.motion
+    );
+
+
+    /*
+        Nagyobb kattintási felület
+    */
+
+    body.classList.toggle(
+        "accessibility-large-targets",
+        accessibilitySettings.targets
+    );
+
+
+    /*
+        Billentyűzet mód
+    */
+
+    body.classList.toggle(
+        "accessibility-keyboard-mode",
+        accessibilitySettings.keyboard
+    );
+
+
+    updateAccessibilityButtons();
+
+}
+
+
+function updateAccessibilityButtons() {
+
+    const buttons = {
+
+        fontSize: {
+            large: accessibilityLarge,
+            xlarge: accessibilityXLarge
+        },
+
+        contrast: accessibilityContrast,
+
+        readable: accessibilityReadable,
+
+        links: accessibilityLinks,
+
+        motion: accessibilityMotion,
+
+        targets: accessibilityTargets,
+
+        keyboard: accessibilityKeyboard
+
+    };
+
+
+    if (buttons.fontSize.large) {
+
+        buttons.fontSize.large.setAttribute(
+            "aria-pressed",
+            accessibilitySettings.fontSize ===
+            "large"
+                ? "true"
+                : "false"
+        );
+
+        buttons.fontSize.large.classList.toggle(
+            "active",
+            accessibilitySettings.fontSize ===
+            "large"
+        );
+
+    }
+
+
+    if (buttons.fontSize.xlarge) {
+
+        buttons.fontSize.xlarge.setAttribute(
+            "aria-pressed",
+            accessibilitySettings.fontSize ===
+            "xlarge"
+                ? "true"
+                : "false"
+        );
+
+        buttons.fontSize.xlarge.classList.toggle(
+            "active",
+            accessibilitySettings.fontSize ===
+            "xlarge"
+        );
+
+    }
+
+
+    const toggleSettings = [
+
+        [
+            buttons.contrast,
+            accessibilitySettings.contrast
+        ],
+
+        [
+            buttons.readable,
+            accessibilitySettings.readable
+        ],
+
+        [
+            buttons.links,
+            accessibilitySettings.links
+        ],
+
+        [
+            buttons.motion,
+            accessibilitySettings.motion
+        ],
+
+        [
+            buttons.targets,
+            accessibilitySettings.targets
+        ],
+
+        [
+            buttons.keyboard,
+            accessibilitySettings.keyboard
+        ]
+
+    ];
+
+
+    toggleSettings.forEach(
+        ([button, state]) => {
+
+            if (!button) {
+                return;
+            }
+
+            button.setAttribute(
+                "aria-pressed",
+                state
+                    ? "true"
+                    : "false"
+            );
+
+            button.classList.toggle(
+                "active",
+                state
+            );
+
+        }
+    );
+
+}
+
+
+function setAccessibilityFontSize(size) {
+
+    if (
+        ![
+            "normal",
+            "large",
+            "xlarge"
+        ].includes(size)
+    ) {
+        return;
+    }
+
+    /*
+        Ha ugyanarra a beállításra kattintunk,
+        visszaáll normál méretre.
+    */
+
+    if (
+        accessibilitySettings.fontSize ===
+        size
+    ) {
+
+        accessibilitySettings.fontSize =
+            "normal";
+
+    } else {
+
+        accessibilitySettings.fontSize =
+            size;
+
+    }
+
+    saveAccessibilitySettings();
+
+    applyAccessibilitySettings();
+
+}
+
+
+function toggleAccessibilitySetting(
+    setting
+) {
+
+    if (
+        !Object.prototype.hasOwnProperty.call(
+            accessibilitySettings,
+            setting
+        )
+    ) {
+        return;
+    }
+
+
+    if (
+        setting === "fontSize"
+    ) {
+        return;
+    }
+
+
+    accessibilitySettings[setting] =
+        !accessibilitySettings[setting];
+
+
+    saveAccessibilitySettings();
+
+    applyAccessibilitySettings();
+
+}
+
+
+function resetAccessibilitySettings() {
+
+    accessibilitySettings = {
+
+        ...defaultAccessibilitySettings
+
+    };
+
+    saveAccessibilitySettings();
+
+    applyAccessibilitySettings();
+
+}
+
+
+/*
+    Accessibility panel megnyitása / bezárása
+*/
+
+if (
+    accessibilityToggle &&
+    accessibilitySelector
+) {
+
+    accessibilityToggle.addEventListener(
+        "click",
+        event => {
+
+            event.stopPropagation();
+
+            const isActive =
+                accessibilitySelector.classList.toggle(
+                    "active"
+                );
+
+            accessibilityToggle.setAttribute(
+                "aria-expanded",
+                isActive
+                    ? "true"
+                    : "false"
+            );
+
+        }
+    );
+
+}
+
+
+/*
+    A panel belsejében lévő kattintások
+    ne zárják be a panelt.
+*/
+
+if (accessibilityPanel) {
+
+    accessibilityPanel.addEventListener(
+        "click",
+        event => {
+
+            event.stopPropagation();
+
+        }
+    );
+
+}
+
+
+/*
+    Betűméret
+*/
+
+if (accessibilityLarge) {
+
+    accessibilityLarge.addEventListener(
+        "click",
+        () => {
+
+            setAccessibilityFontSize(
+                "large"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityXLarge) {
+
+    accessibilityXLarge.addEventListener(
+        "click",
+        () => {
+
+            setAccessibilityFontSize(
+                "xlarge"
+            );
+
+        }
+    );
+
+}
+
+
+/*
+    Egyéb Accessibility beállítások
+*/
+
+if (accessibilityContrast) {
+
+    accessibilityContrast.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "contrast"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityReadable) {
+
+    accessibilityReadable.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "readable"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityLinks) {
+
+    accessibilityLinks.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "links"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityMotion) {
+
+    accessibilityMotion.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "motion"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityTargets) {
+
+    accessibilityTargets.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "targets"
+            );
+
+        }
+    );
+
+}
+
+
+if (accessibilityKeyboard) {
+
+    accessibilityKeyboard.addEventListener(
+        "click",
+        () => {
+
+            toggleAccessibilitySetting(
+                "keyboard"
+            );
+
+        }
+    );
+
+}
+
+
+/*
+    Reset
+*/
+
+if (accessibilityReset) {
+
+    accessibilityReset.addEventListener(
+        "click",
+        () => {
+
+            resetAccessibilitySettings();
+
+        }
+    );
+
+}
+
+
+/*
+    Accessibility beállítások betöltése
+    az oldal indulásakor.
+*/
+
+loadAccessibilitySettings();
+
+applyAccessibilitySettings();
 
 
 /* =========================================================
@@ -1112,6 +1913,120 @@ document.addEventListener(
 
         }
 
+
+        if (accessibilitySelector) {
+
+            accessibilitySelector.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (accessibilityToggle) {
+
+            accessibilityToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    }
+);
+
+
+/*
+    Escape billentyűvel minden dropdown bezárása.
+*/
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key !==
+            "Escape"
+        ) {
+            return;
+        }
+
+
+        if (languageSelector) {
+
+            languageSelector.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (languageToggle) {
+
+            languageToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        if (statusSelector) {
+
+            statusSelector.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (statusToggle) {
+
+            statusToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        if (accessibilitySelector) {
+
+            accessibilitySelector.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (accessibilityToggle) {
+
+            accessibilityToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        if (nav) {
+
+            nav.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (menuToggle) {
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
     }
 );
 
@@ -1135,18 +2050,28 @@ function applyTheme(theme) {
 
     if (theme === "dark") {
 
-        document.body.classList.add("dark");
+        document.body.classList.add(
+            "dark"
+        );
 
         if (themeIcon) {
-            themeIcon.textContent = "☀";
+
+            themeIcon.textContent =
+                "☀";
+
         }
 
     } else {
 
-        document.body.classList.remove("dark");
+        document.body.classList.remove(
+            "dark"
+        );
 
         if (themeIcon) {
-            themeIcon.textContent = "☾";
+
+            themeIcon.textContent =
+                "☾";
+
         }
 
     }
@@ -1155,9 +2080,14 @@ function applyTheme(theme) {
 
 
 const savedTheme =
-    localStorage.getItem("theme") || "light";
+    localStorage.getItem(
+        "theme"
+    ) || "light";
 
-applyTheme(savedTheme);
+
+applyTheme(
+    savedTheme
+);
 
 
 if (themeToggle) {
@@ -1172,14 +2102,18 @@ if (themeToggle) {
                 );
 
             const newTheme =
-                isDark ? "light" : "dark";
+                isDark
+                    ? "light"
+                    : "dark";
 
             localStorage.setItem(
                 "theme",
                 newTheme
             );
 
-            applyTheme(newTheme);
+            applyTheme(
+                newTheme
+            );
 
         }
     );
@@ -1202,7 +2136,10 @@ const nav =
     );
 
 
-if (menuToggle && nav) {
+if (
+    menuToggle &&
+    nav
+) {
 
     menuToggle.addEventListener(
         "click",
@@ -1225,8 +2162,20 @@ if (menuToggle && nav) {
     );
 
 
+    nav.addEventListener(
+        "click",
+        event => {
+
+            event.stopPropagation();
+
+        }
+    );
+
+
     document
-        .querySelectorAll(".nav a")
+        .querySelectorAll(
+            ".nav a"
+        )
         .forEach(link => {
 
             link.addEventListener(
@@ -1278,11 +2227,15 @@ const todayInfo =
 function getLocale() {
 
     return {
+
         hu: "hu-HU",
         en: "en-GB",
         de: "de-DE",
         sl: "sl-SI"
-    }[currentLanguage] || "hu-HU";
+
+    }[
+        currentLanguage
+    ] || "hu-HU";
 
 }
 
@@ -1357,6 +2310,7 @@ function updateClock() {
 
 
 updateClock();
+
 
 setInterval(
     updateClock,
@@ -1433,7 +2387,10 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-            deviceIcon.textContent = "⌚";
+
+            deviceIcon.textContent =
+                "⌚";
+
         }
 
     } else if (isMobile) {
@@ -1444,7 +2401,10 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-            deviceIcon.textContent = "📱";
+
+            deviceIcon.textContent =
+                "📱";
+
         }
 
     } else if (isTablet) {
@@ -1455,7 +2415,10 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-            deviceIcon.textContent = "📲";
+
+            deviceIcon.textContent =
+                "📲";
+
         }
 
     } else {
@@ -1466,7 +2429,10 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-            deviceIcon.textContent = "💻";
+
+            deviceIcon.textContent =
+                "💻";
+
         }
 
     }
@@ -1475,6 +2441,7 @@ function updateDeviceInfo() {
 
 
 updateDeviceInfo();
+
 
 window.addEventListener(
     "resize",
@@ -1595,7 +2562,8 @@ function updateWeatherText() {
 
     if (
         weatherDescription &&
-        weatherDescription.dataset.apiLoaded !== "true"
+        weatherDescription.dataset.apiLoaded !==
+        "true"
     ) {
 
         weatherDescription.textContent =
@@ -1633,67 +2601,68 @@ function updateWeatherLocationText() {
 
 function getUserLocation() {
 
-    return new Promise(resolve => {
+    return new Promise(
+        resolve => {
 
-        if (!navigator.geolocation) {
-
-            console.warn(
-                "Geolocation is not supported."
-            );
-
-            resolve();
-
-            return;
-
-        }
-
-
-        navigator.geolocation.getCurrentPosition(
-
-            position => {
-
-                weatherCoordinates = {
-
-                    latitude:
-                        position.coords.latitude,
-
-                    longitude:
-                        position.coords.longitude,
-
-                    name:
-                        "Aktuális hely"
-
-                };
-
-
-                resolve();
-
-            },
-
-            error => {
+            if (!navigator.geolocation) {
 
                 console.warn(
-                    "Geolocation failed:",
-                    error.message
+                    "Geolocation is not supported."
                 );
 
                 resolve();
 
-            },
-
-            {
-
-                enableHighAccuracy: false,
-
-                timeout: 10000,
-
-                maximumAge: 600000
+                return;
 
             }
 
-        );
 
-    });
+            navigator.geolocation.getCurrentPosition(
+
+                position => {
+
+                    weatherCoordinates = {
+
+                        latitude:
+                            position.coords.latitude,
+
+                        longitude:
+                            position.coords.longitude,
+
+                        name:
+                            "Aktuális hely"
+
+                    };
+
+                    resolve();
+
+                },
+
+                error => {
+
+                    console.warn(
+                        "Geolocation failed:",
+                        error.message
+                    );
+
+                    resolve();
+
+                },
+
+                {
+
+                    enableHighAccuracy: false,
+
+                    timeout: 10000,
+
+                    maximumAge: 600000
+
+                }
+
+            );
+
+        }
+    );
 
 }
 
@@ -1723,21 +2692,13 @@ async function loadWeather() {
 
         const url =
             "https://api.open-meteo.com/v1/forecast" +
-
             `?latitude=${weatherCoordinates.latitude}` +
-
             `&longitude=${weatherCoordinates.longitude}` +
-
             "&current=" +
-
             "temperature_2m," +
-
             "relative_humidity_2m," +
-
             "weather_code," +
-
             "wind_speed_10m" +
-
             "&timezone=auto";
 
 
@@ -2016,7 +2977,9 @@ function updateExchangeText() {
     }
 
     if (
-        exchangeUpdated.textContent.includes("...") ||
+        exchangeUpdated.textContent.includes(
+            "..."
+        ) ||
         exchangeUpdated.textContent === ""
     ) {
 
@@ -2052,9 +3015,11 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
+
                         throw new Error(
                             "EUR/HUF API error"
                         );
+
                     }
 
                     return response.json();
@@ -2066,9 +3031,11 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
+
                         throw new Error(
                             "USD/HUF API error"
                         );
+
                     }
 
                     return response.json();
@@ -2080,9 +3047,11 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
+
                         throw new Error(
                             "GBP/HUF API error"
                         );
+
                     }
 
                     return response.json();
@@ -2094,9 +3063,11 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
+
                         throw new Error(
                             "CHF/HUF API error"
                         );
+
                     }
 
                     return response.json();
@@ -2234,3 +3205,12 @@ setLanguage(
 setStatus(
     currentStatus
 );
+
+
+/* =========================================================
+   FINAL ACCESSIBILITY SYNC
+========================================================= */
+
+loadAccessibilitySettings();
+
+applyAccessibilitySettings();
